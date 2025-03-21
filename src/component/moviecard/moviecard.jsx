@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 function Moviecard({title, description, posterURL,rating, nkiri}) {
   return (
     <div>
@@ -15,6 +15,7 @@ function Moviecard({title, description, posterURL,rating, nkiri}) {
   <div className="card-body">
   <a href={nkiri} className="btn btn-primary">Download</a>
   </div>
+  <Link to={`../moviedetalis/moviedetails.jsx`}>View Details</Link>
 </div>
 
     </div>
